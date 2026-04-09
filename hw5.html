@@ -1,12 +1,25 @@
 <h1>IS 445 Homework 5.1 Visualizations</h1>
 
-<h6>In this assignment, I look at the following dataset: https://raw.githubusercontent.com/UIUC-iSchool-DataViz/is445_data/main/bfro_reports_fall2022.csv /n I create two interactive visualizations.</h6>
+<h4>In this assignment, I look at the following dataset: https://raw.githubusercontent.com/UIUC-iSchool-DataViz/is445_data/main/bfro_reports_fall2022.csv. I create two interactive 
+    visualizations that investigate paranormal sitings from across the U.S. from the years of 1870-2020.</h4>
 
-<h2>Chart 1</h2>
+<h2>Chart 1: Interactive Map of Sightings</h2>
+
+<h4>In this chart, I am visualizing the spread and frequency of paranormal sighthings in a given time period. The user is able to select a point on the graph within the time range,
+which pulls up information about the sighting on the side panel. In the side panel, I decided to include mostly qualitative data about the sightings. These included the 'title', 'state',
+    'county', 'location_details', 'classification', and 'observed' columns. I encoded all of these variables as Nominative data. I also decided to include the date column, which I encoded 
+    as Temporal. I kept the colors simple, with a gray background of the United States and green dots that mark the latitude-longitude locations of sightings. When the user selects a 
+point, it turns red. </h4>
+
+<h4>To prepare the data for this chart, I created a copy of the original dataframe called df_map. I then dropped all rows with a 'location' value (location is a combination of latitude
+    and longitude values). I also converted the 'date' column to a datetime. Becuase of the side panel, I also needed to wrap some of the columns with longer values so the user is able to 
+see the information. </h4>
 
 <iframe 
     src="chart1.html" 
-    width="1200" 
+    width="1300" 
     height="650"
     style="border:none;">
 </iframe>
+
+<h2>Chart 2</h2>
