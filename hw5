@@ -1,8 +1,0 @@
-<h2>Chart 1</h2>
-
-<iframe 
-    src="chart.html" 
-    width="800" 
-    height="600"
-    style="border:none;">
-</iframe>
